@@ -17,6 +17,7 @@ module.exports = {
         post: req.params.id,
         likes: 0,
         user: req.user.id,
+        userName: req.user.userName,
       });
       console.log("Comment has been added!");
       res.redirect(`/post/${req.params.id}`);
